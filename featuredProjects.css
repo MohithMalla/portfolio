@@ -1,0 +1,216 @@
+.featuredprojects {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center; /* Centering the content */
+}
+
+.movie_gallery {
+    margin-left: 1rem;
+    border-radius: 0.35rem;
+    background: rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 7px #385224;
+    margin-top: 2rem;
+}
+
+.image {
+    height: 16rem;
+    width: 29.7rem;
+    object-fit: cover;
+    border-radius: 0.35rem;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.projecttitles {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-align: center; /* Centering the project title */
+}
+
+.underline, .unline, .undline {
+    height: 0.25rem;
+    margin-top: -1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6rem;
+    background-color: rgb(6, 255, 6);
+    line-height: 1;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #7dae7d;
+}
+
+.github {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-right: 0.5rem;
+    color: #7dae7d;
+    cursor: pointer;
+
+}
+
+.live {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-left: 0.5rem;
+    color: #7dae7d;
+    cursor: pointer;
+}
+
+.stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.link {
+    color: #7dae7d;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.allprojects {
+    height: 3rem;
+    padding: 0.5rem;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    border: none;
+    margin-top: 2.5rem;
+    padding-bottom: 0.5rem;
+    background: #00b000;
+    padding: 0 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    text-decoration: none;/* Centering the button */
+}
+
+/* Base styles for .container */
+.container {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    background-color: #0d1e005b;
+    padding-bottom: 3rem;
+}
+
+/* For small screens (max-width: 600px) */
+@media (max-width: 900px) {
+    .container {
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem; /* Adjusting left-right margin */
+    }
+
+    .featuredprojects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        width: 90%; /* Adjust image width for small screens */
+    }
+}
+
+/* For medium screens (601px to 1024px) */
+@media (min-width: 901px) and (max-width: 1400px) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    .container {
+        margin-top: 0.75rem;
+        padding-top: 0.75rem;
+        padding-bottom: 4rem;
+        margin-right: -5rem;
+        margin-left: auto;
+        padding-left: 1rem;
+        padding-right: 7rem;
+    }
+
+    .introhead, .abouthead {
+        margin-left: 7rem;
+        margin-right: -5rem;
+    }
+
+    .profile {
+        width: 30rem;
+    }
+
+    .info {
+        margin-left: 5.5rem;
+    }
+
+    .abouttext, .aboutname {
+        padding-left: 12rem;
+    }
+
+    .technicalskills {
+        gap: 1rem;
+    }
+
+    .webtechnologies {
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+
+    .socialmedia {
+        margin-left: 3rem;
+    }
+
+    .navbar {
+        width: 100%; /* Full width for navbar */
+    }
+
+    .featuredprojects {
+        padding-left: 0;
+        margin-right: -4rem;
+        padding-bottom: 2rem;
+        gap: 1rem;
+        justify-content: center; 
+        margin-left: 1rem;
+    }
+
+    .pro {
+        margin: 1rem;
+    }
+
+    .foot {
+        padding-left: 18rem;
+        padding-right: 18rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .container .projecttitles {
+        margin-left: 8rem;
+        margin-right: auto;
+    }
+   
+    .unline {
+        padding-right: 4rem;
+        padding-left: 1rem;
+        margin-left: auto;
+        margin-right: 23rem;
+    }
+
+    .allprojects {
+        margin-right: 24rem;
+        margin-left: auto;
+    }
+    .underline{
+        margin-left: -5rem;
+    }
+}

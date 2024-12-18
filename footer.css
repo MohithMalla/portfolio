@@ -1,0 +1,40 @@
+.foot{
+    padding-top: 2rem;
+    background: #222222;
+    padding-bottom: 6rem;
+
+}
+.footnavbar a{
+    margin: 1.5rem;
+    color: #fdfdfd;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    height: 2rem;
+
+}
+.footnavbar a:hover{
+    
+    color: rgb(6, 255, 6);    
+    padding-bottom: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+transition: all 0.3s ease-in-out;
+}
+.socmedia{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 3rem;
+}
+.copyrights{
+    margin-top: -1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    font-family:'Courier New', Courier, monospace;
+
+}

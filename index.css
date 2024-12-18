@@ -1,0 +1,122 @@
+body {
+    background: #262626;
+    text-decoration: none;
+}
+
+nav {
+    margin-top: -0.1rem;
+    margin-left: 5rem; /* Adjust left margin to move the nav to the right */
+    margin-right: auto; /* Ensure right margin is auto for centering */
+    padding: 1rem 0; /* Add padding for spacing */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between items */
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    max-width: 120rem;
+    padding: 0 2rem; /* Add padding for responsiveness */
+    box-shadow: 0 0 7px #385224;
+    background: #222222;
+}
+
+.navimg {
+    object-fit: cover;
+    height: 7.7rem;
+    width: 6.5em;
+    margin-right: auto; /* Pushes links to the right */
+}
+
+nav a {
+    margin: 1rem; /* Adjusted margin for spacing */
+    color: #fdfdfd;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: rgb(6, 255, 6);
+    padding-bottom: 0.5rem; /* Adjust padding for hover effect */
+    text-decoration: none;
+    border-bottom: 0.25rem rgb(6, 255, 6) solid;
+}
+
+nav a.active {
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(8, 123, 8, 0.688);
+    border-radius: 5px;
+    padding: 0.25rem;
+}
+
+nav a.active:hover {
+    color: rgb(6, 255, 6);
+    text-decoration: none;
+    border-bottom: 0.25rem rgb(6, 255, 6) solid;
+}
+
+.msgimg {
+    object-fit: cover;
+    height: 1.5rem;
+    width: 1.75rem;
+    color: #000;
+    margin-right: 0.5rem;
+}
+
+button.contact {
+    height: 2rem;
+    padding: 0.2rem 0.3rem;
+    color: #000;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    border: none;
+    margin-top: 0; /* Set to 0 */
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    nav {
+        margin-left: 0; /* Center nav on small screens */
+        margin-right: 0; /* Center nav on small screens */
+    }
+
+    nav a {
+        font-size: 1rem; /* Smaller font size for links */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        gap: 1rem; /* Reduce gap for small screens */
+    }
+
+    .navimg {
+        height: 5rem; /* Reduce image height for smaller screens */
+        width: 5em; /* Reduce image width for smaller screens */
+    }
+
+    button.contact {
+        font-size: 1rem; /* Smaller button font size */
+        padding: 0.2rem 0.5rem; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        margin: 0.5rem; /* Smaller margin for links */
+    }
+
+    .navbar {
+        gap: 0.5rem; /* Reduce gap even more */
+    }
+
+    button.contact {
+        width: 100%; /* Full width on small screens */
+    }
+}

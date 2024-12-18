@@ -1,0 +1,48 @@
+.cont{
+    font-size: 1rem;
+    padding: 1rem;
+    background: #222222;
+    color: #ffffff;
+    width: 25rem;
+    letter-spacing: 2.5px;
+    margin: 1rem;
+}
+.details{
+    display: grid;
+    margin-left: 33rem;
+    align-self: start;
+}
+.socimed{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.contme{
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+.protitles{
+    font-size: 3rem;
+    color: #ffffff;
+    margin-left: 1.5rem;
+}
+@media (min-width: 901px) and (max-width: 1400px) {
+.details{
+    display: grid;
+    margin-left: 27rem;
+    align-self: start;
+}
+.protitles{
+    margin-left: 17rem;
+}
+
+}
+@media (max-width: 900px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    }

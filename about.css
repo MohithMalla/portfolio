@@ -1,0 +1,260 @@
+/* Global Styles */
+.profileimg{
+  padding-top: 2rem;
+  object-fit: cover;
+  height: 38rem;
+  width: 30rem;
+  border-radius: 50%;
+  margin-right: 10rem;
+}
+.abouthead{
+  margin-top: -5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6rem;
+  margin-bottom: 3rem;
+  font-weight: bolder;
+  font-size: 2rem;
+  font-family:"kaushan script";
+  background: #262626;
+}
+.abouttext {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-left: -10rem;
+  line-height: 5.5rem;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+}
+.aboutname{
+  padding-top: 1rem;
+  color: #06ff06;
+  margin-left: -3rem;
+  animation: 2s linear 0s 1 normal none running fadeInAnimation;
+}
+.aboutinfo{
+  font-family: sans-serif;
+  width: 67%;
+  margin-left: 11.95rem;
+  text-align: start;
+  opacity: 60%;
+  color: #6fe27b;
+  font-size: 0.9rem;
+  font-weight: 450;
+  letter-spacing: 2.2px;
+  line-height: 1.3rem;
+}
+
+.aboutcontent{
+  margin-top: 5rem;
+  margin-left: -1rem;
+}
+
+.aboutme{
+  height: 3rem;
+  padding: 0.5rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  border: none;
+  margin-top: 2.5rem;
+  margin-left: -11rem;
+  padding-bottom: 0.5rem;
+  background: #00b000;
+  padding: 0 2rem;
+}
+
+@keyframes fadeInAnimation {
+  0%{
+      opacity: 0;
+      font-size: 0px;
+  }
+  100%{
+      opacity: 1;
+      font-size: auto;
+  }
+}
+
+.skills{
+  background: #00b000;
+  list-style-type: none;
+}
+
+.technicalskills{
+  color: #ffffff;
+}
+
+.skills{
+  background: #10421c;
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  letter-spacing: 0.1rem;
+  border-radius: 0.25rem;
+  width: 5.5rem;
+  box-shadow:0 0px  #bfdebf;
+  margin-right: 0.5rem;
+  transition: all 0.3s linear;
+}
+
+.webtechnologies ul, .programminglanguages ul, .databases ul, 
+.designtools-academicframeworks ul, .technicalframeworks ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.webtechnologies,.databases,.programminglanguages,.developertools,.designtools-academicframeworks,.technicalframeworks{
+  width: 35rem;
+  font-size: 2rem;
+  background:#222222;
+  box-sizing: border-box;
+  padding-bottom: 1rem;
+  box-shadow:0 5px 10px hsla(0, 0%, 100%, .1);
+}
+
+.technicalskills{
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.institutes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.institute {
+  position: relative;
+  width: 30%;
+  overflow: hidden;
+}
+
+.img {
+  margin-top: 3rem;
+  width: 20rem;
+  height: 29.7rem;
+  object-fit: cover;
+  border-radius: 0.35rem;
+  box-shadow: 0 0 15px #10421c;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.img:hover {
+  transform: scale(1.05);
+  filter: brightness(70%);
+}
+
+.text-overlaytry, .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text-overlaytry {
+  color: white;
+  font-size: 2rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease-out, background-color 0.3s ease-in-out;
+}
+
+.text-overlay {
+  width: 20rem;
+  height: 29.5rem;
+  border-radius: 0.35rem;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.institute:hover .text-overlay {
+  opacity: 1;
+  background-color: rgb(125, 249, 152,1);
+  margin-top: 1.6rem;
+}
+
+.institute:hover .text-overlaytry {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1rem;
+}
+
+.education {
+  margin-top: 5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 7rem;
+  background: #222222;
+}
+
+/* Mobile Responsive Styles */
+@media (min-width: 901px) and (max-width: 1400px) {
+  .webtechnologies, .programminglanguages, .databases, .designtools-academicframeworks, .developertools, .technicalframeworks {
+      margin-right: -16rem;
+      margin-left: 2rem;
+      margin-bottom: -5rem;
+      margin-top: 1rem;
+  }
+
+  .technicalskills {
+      gap: 12rem;
+      margin-top: rem;
+  }
+
+  .protitles {
+      margin-top: 3rem;
+  }
+
+  .projecttitles {
+      margin-left: 3rem;
+  }
+
+  .undline, .underline {
+      margin-left: 39rem;
+  }
+
+  .education {
+      padding-left: 2rem;
+      padding-right: 3rem;
+      margin-right: -17rem;
+      margin-top: 11rem;
+  }
+
+  .socimed {
+      margin-left: 17rem;
+  }
+
+  .details {
+      margin-left: 8rem;
+  }
+
+  /* Moving the about section to the right side */
+  .about {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-right: 5rem; /* Adjust margin for proper alignment */
+  }
+
+  .aboutname, .abouttext, .aboutinfo, .profileimg {
+      margin-right: 0; /* Reset any automatic centering */
+  }
+}
+
+
